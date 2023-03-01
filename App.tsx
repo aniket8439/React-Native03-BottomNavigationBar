@@ -15,10 +15,9 @@ const App = () => {
     
     <Tab.Navigator 
     screenOptions={{
-      tabBarActiveBackgroundColor:"#03203C",
-      tabBarInactiveTintColor:"#000000",
-      tabBarActiveTintColor:"#FFFFFF",
-      
+      tabBarInactiveTintColor:"#758283",
+      tabBarActiveTintColor:"#000",
+      headerShown:false
       }}>
       <Tab.Screen  name="Home" component={HomeScreen} options={{
           tabBarLabel: 'Home',
@@ -27,7 +26,7 @@ const App = () => {
               source={
                 focused
                   ? require('./assets/logo2.png')
-                  : require('./assets/logo2.png')
+                  : require('./assets/logo1.png')
               }
               style={{
                 width: size,
@@ -45,7 +44,7 @@ const App = () => {
               source={
                 focused
                   ? require('./assets/logo3.gif')
-                  : require('./assets/logo3.gif')
+                  : require('./assets/logo5.png')
               }
               style={{
                 width: size,
@@ -64,7 +63,7 @@ const App = () => {
             source={
               focused
                 ? require('./assets/logo4.png')
-                : require('./assets/logo4.png')
+                : require('./assets/logo6.png')
             }
             style={{
               width: size,
