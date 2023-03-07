@@ -11,8 +11,9 @@ const Tab = createBottomTabNavigator();
 const App = () => {
   
   return (
+    <View style={styles.container}>
+     
     <NavigationContainer>
-    
     <Tab.Navigator 
     screenOptions={{
       tabBarInactiveTintColor:"#758283",
@@ -77,6 +78,8 @@ const App = () => {
            />
     </Tab.Navigator>
     </NavigationContainer>
+   
+    </View>
   )
 }
 
@@ -84,5 +87,12 @@ export default App
 const styles= StyleSheet.create({
   screen:{
     backgroundColor:"#000000"
+  },
+  contentContainer:{
+    flex:1,
+    flexGrow:1
+  },
+  container:{
+    flex:1
   }
 })
