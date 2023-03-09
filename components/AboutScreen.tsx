@@ -28,7 +28,7 @@ const AboutScreen = () => {
         <TouchableOpacity
             onPress={()=> openWebsite('https://www.instagram.com/aniket_sharma_8439/')}
             >
-          <Text style={{color:'#FFFFFF'}}>follow us {'>'}</Text>
+          <Text style={{color:'#FFFFFF',paddingHorizontal:4}}>follow us {'>'}</Text>
           </TouchableOpacity>
         </View>
         </View>
@@ -68,8 +68,24 @@ const AboutScreen = () => {
         <Text style={styles.normalText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
           Cras id nisl eu augue sodales dignissim. Duis eu elit in libero 
           rutrum pellentesque sed at est. </Text>
+          <Text style={styles.normalText}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+          Cras id nisl eu augue sodales dignissim. Duis eu elit in libero 
+          rutrum pellentesque sed at est. </Text>
       </View>
     </View>
+    </View>
+    <View style={styles.footer}>
+      <Text style={styles.footerText}>Recapture</Text>
+      <Text style={styles.simpleText}>The user experience matters,budget matters. With Ghar-ka-Swaad 
+      add-on's you can consolidate vendors.</Text>
+      <View style={styles.cardContainer2}>
+        <View style={styles.button}>
+          <Text style={{color:"#FFF",paddingHorizontal:4}}>Book a discovery call {'>'}</Text>
+        </View>
+        <View style={styles.button2}>
+        <Text style={{paddingHorizontal:4}}>Watch a demo {'>'}</Text>
+        </View>
+      </View>
     </View>
     </ScrollView>
   )
@@ -120,11 +136,11 @@ const styles = StyleSheet.create({
     },
     button:{
       height:40,
-      width:100,
       backgroundColor:'orange',
       borderRadius:10,
       alignItems:"center",
-      justifyContent:"center"
+      justifyContent:"center",
+      elevation:3
     },
     cardContainer:{
       alignItems:"center",
@@ -148,6 +164,7 @@ const styles = StyleSheet.create({
       height:180,
       width:150,
       borderRadius:6,
+      marginLeft:10
     },
     cardContainer3:{
       flexDirection:"row",
@@ -155,11 +172,34 @@ const styles = StyleSheet.create({
       justifyContent:"flex-start",
       alignItems:"center",
       paddingHorizontal:8,
-      marginTop:10
+      marginTop:20
     },
     
     card:{
       width:240
+    },
+    footer:{
+      backgroundColor:'#6A1B4D',
+    },
+    footerText:{
+      fontSize:26,
+      fontWeight:"bold",
+      color:'#FFFFFF',
+      paddingHorizontal:16,
+      marginTop:10
+    },
+    simpleText:{
+      padding:8,
+      paddingHorizontal:10,
+    },
+    button2:{
+      height:40,
+      backgroundColor:'#6A1B4D',
+      borderRadius:10,
+      alignItems:"center",
+      justifyContent:"center",
+      borderWidth:0.3,
+      borderColor:"#FFF"
     }
     
 })
